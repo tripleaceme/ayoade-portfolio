@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Source Contributions | Ayoade Adegbite</title>
+    <meta name="description" content="Ayoade Adegbite's open-source dbt packages and tools for analytics engineering, documentation automation, and data quality.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-v2.css">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+    <a href="index-v2.html" class="nav-logo">Ayoade<span>.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <div class="nav-links" id="navLinks">
+        <a href="index-v2.html">Home</a>
+        <a href="speaking.html">Speaking</a>
+        <a href="mentorship.html">Mentorship</a>
+        <a href="opensource.html" class="active">Open Source</a>
+        <a href="index-v2.html#contact" class="nav-cta">Book Me</a>
+    </div>
+</nav>
+
+<section class="page-hero">
+    <div class="hero-glow"></div>
+    <div class="container">
+        <span class="section-badge">Open Source Contributions</span>
+        <h1 class="page-hero-title">Tools I've Built for the Community</h1>
+        <p class="page-hero-subtitle">Open-source dbt packages and data tools solving real problems in analytics engineering &mdash; documentation, data quality, observability, and the modern data stack.</p>
+        <div class="hero-buttons" style="justify-content:center">
+            <a href="https://github.com/tripleaceme" target="_blank" class="btn btn-primary">View GitHub Profile</a>
+        </div>
+    </div>
+</section>
+
+<section class="stats-bar">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat"><div class="stat-number">6</div><div class="stat-label">OSS Packages</div></div>
+            <div class="stat"><div class="stat-number">152</div><div class="stat-label">Public Repos</div></div>
+            <div class="stat"><div class="stat-number">dbt</div><div class="stat-label">Primary Ecosystem</div></div>
+        </div>
+    </div>
+</section>
+
+<!-- GitHub Achievements -->
+<section class="section" style="padding-top: 0;">
+    <div class="container">
+        <div class="github-achievements">
+            <div class="achievement-badge" title="Contributed code to repositories preserved in the Arctic Code Vault">
+                <span class="achievement-icon">&#10052;</span>
+                <span class="achievement-name">Arctic Code Vault Contributor</span>
+            </div>
+            <div class="achievement-badge" title="Opened pull requests that have been merged">
+                <span class="achievement-icon">&#128039;</span>
+                <span class="achievement-name">Pull Shark x2</span>
+            </div>
+            <div class="achievement-badge" title="Paired on merged pull requests">
+                <span class="achievement-icon">&#129309;</span>
+                <span class="achievement-name">Pair Extraordinaire</span>
+            </div>
+            <div class="achievement-badge" title="Fast first issue response">
+                <span class="achievement-icon">&#9889;</span>
+                <span class="achievement-name">Quickdraw</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURED OSS PROJECTS -->
+<section class="section" id="featured">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">Featured Projects</span>
+            <h2 class="section-title">dbt Packages & Data Tools</h2>
+            <p class="section-subtitle">These packages are used in production analytics workflows to improve documentation, data quality, and observability.</p>
+        </div>
+
+        <!-- Large featured cards -->
+        <div class="oss-featured-grid">
+
+            <div class="oss-featured-card">
+                <div class="oss-featured-header">
+                    <div class="repo-name">dbt-doc-tracker</div>
+                    <span class="repo-stat"><span class="star">&#9733;</span> 6</span>
+                </div>
+                <p class="oss-featured-desc">A dbt package that detects and records documentation changes across your dbt project. Instead of storing full snapshots, it only records the diffs &mdash; when a description is added, modified, or removed. Built to support documentation governance and compliance tracking.</p>
+                <div class="oss-featured-highlights">
+                    <div class="oss-highlight">
+                        <div class="oss-highlight-label">Use Case</div>
+                        <div class="oss-highlight-value">Documentation governance & audit trails</div>
+                    </div>
+                    <div class="oss-highlight">
+                        <div class="oss-highlight-label">How It Works</div>
+                        <div class="oss-highlight-value">Tracks diffs in model/column descriptions across dbt runs</div>
+                    </div>
+                </div>
+                <div class="oss-featured-footer">
+                    <span class="repo-lang"><span class="lang-dot sql"></span>SQL / Jinja</span>
+                    <a href="https://github.com/tripleaceme/dbt-doc-tracker" target="_blank" class="btn btn-outline btn-sm">View on GitHub &rarr;</a>
+                </div>
+            </div>
+
+            <div class="oss-featured-card">
+                <div class="oss-featured-header">
+                    <div class="repo-name">dbt-doc-inherit</div>
+                    <span class="repo-stat"><span class="star">&#9733;</span> 3</span>
+                </div>
+                <p class="oss-featured-desc">A dbt package that propagates column descriptions along the DAG &mdash; define once, inherit downstream. Eliminates the repetitive work of documenting the same column across dozens of models. Solves the "documentation drift" problem at scale.</p>
+                <div class="oss-featured-highlights">
+                    <div class="oss-highlight">
+                        <div class="oss-highlight-label">Use Case</div>
+                        <div class="oss-highlight-value">DRY documentation across dbt DAGs</div>
+                    </div>
+                    <div class="oss-highlight">
+                        <div class="oss-highlight-label">How It Works</div>
+                        <div class="oss-highlight-value">Propagates descriptions from parent to child models automatically</div>
+                    </div>
+                </div>
+                <div class="oss-featured-footer">
+                    <span class="repo-lang"><span class="lang-dot sql"></span>SQL / Jinja</span>
+                    <a href="https://github.com/tripleaceme/dbt-doc-inherit" target="_blank" class="btn btn-outline btn-sm">View on GitHub &rarr;</a>
+                </div>
+            </div>
+
+            <div class="oss-featured-card">
+                <div class="oss-featured-header">
+                    <div class="repo-name">dbt-autodoc</div>
+                </div>
+                <p class="oss-featured-desc">Auto-generate dbt model and column descriptions using heuristics or LLMs. This is the tool behind the 35%+ documentation coverage improvement at The Bredge. Bridges the gap between "we should document everything" and actually doing it.</p>
+                <div class="oss-featured-highlights">
+                    <div class="oss-highlight">
+                        <div class="oss-highlight-label">Use Case</div>
+                        <div class="oss-highlight-value">AI-assisted documentation generation</div>
+                    </div>
+                    <div class="oss-highlight">
+                        <div class="oss-highlight-label">Impact</div>
+                        <div class="oss-highlight-value">35%+ documentation coverage improvement in production</div>
+                    </div>
+                </div>
+                <div class="oss-featured-footer">
+                    <span class="repo-lang"><span class="lang-dot py"></span>Python</span>
+                    <a href="https://github.com/tripleaceme/dbt-autodoc" target="_blank" class="btn btn-outline btn-sm">View on GitHub &rarr;</a>
+                </div>
+            </div>
+
+            <div class="oss-featured-card">
+                <div class="oss-featured-header">
+                    <div class="repo-name">dbt-anomaly-detector</div>
+                    <span class="repo-stat"><span class="star">&#9733;</span> 1</span>
+                </div>
+                <p class="oss-featured-desc">Lightweight dbt package for statistical anomaly detection on warehouse metrics using Python models. Catch data quality issues before they reach dashboards or downstream consumers.</p>
+                <div class="oss-featured-highlights">
+                    <div class="oss-highlight">
+                        <div class="oss-highlight-label">Use Case</div>
+                        <div class="oss-highlight-value">Proactive data quality monitoring</div>
+                    </div>
+                    <div class="oss-highlight">
+                        <div class="oss-highlight-label">How It Works</div>
+                        <div class="oss-highlight-value">Statistical detection on warehouse metrics via dbt Python models</div>
+                    </div>
+                </div>
+                <div class="oss-featured-footer">
+                    <span class="repo-lang"><span class="lang-dot py"></span>Python / SQL</span>
+                    <a href="https://github.com/tripleaceme/dbt-anomaly-detector" target="_blank" class="btn btn-outline btn-sm">View on GitHub &rarr;</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- OTHER NOTABLE REPOS -->
+<section class="section section-alt" id="other">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">More Projects</span>
+            <h2 class="section-title">Community Resources & Tools</h2>
+        </div>
+        <div class="repos-grid">
+            <a href="https://github.com/tripleaceme/tap-substack" target="_blank" class="repo-card">
+                <div class="repo-name">tap-substack</div>
+                <p class="repo-desc">Singer tap for extracting Substack newsletter data. Built for analytics on newsletter performance and engagement.</p>
+                <div class="repo-meta"><span class="repo-stat"><span class="star">&#9733;</span> 1</span><span class="repo-lang"><span class="lang-dot py"></span>Python</span></div>
+            </a>
+            <a href="https://github.com/tripleaceme/awesome-modern-data-stack" target="_blank" class="repo-card">
+                <div class="repo-name">awesome-modern-data-stack</div>
+                <p class="repo-desc">Curated list of open-source tools covering every layer of the modern data stack &mdash; ingestion to BI and beyond.</p>
+                <div class="repo-meta"><span class="repo-lang"><span class="lang-dot md"></span>Markdown</span></div>
+            </a>
+            <a href="https://github.com/tripleaceme/ai-docs-workshop" target="_blank" class="repo-card">
+                <div class="repo-name">ai-docs-workshop</div>
+                <p class="repo-desc">Workshop materials from KwaraBuild 2025 on AI-powered documentation for data teams.</p>
+                <div class="repo-meta"><span class="repo-lang"><span class="lang-dot py"></span>Python</span></div>
+            </a>
+            <a href="https://github.com/tripleaceme/airflow-dbt" target="_blank" class="repo-card">
+                <div class="repo-name">airflow-dbt</div>
+                <p class="repo-desc">Airflow + dbt integration patterns for orchestrating analytics workflows.</p>
+                <div class="repo-meta"><span class="repo-lang"><span class="lang-dot py"></span>Python</span></div>
+            </a>
+            <a href="https://github.com/tripleaceme/data_lineage" target="_blank" class="repo-card">
+                <div class="repo-name">data_lineage</div>
+                <p class="repo-desc">Data lineage and metadata tracking utilities for understanding data flow and dependencies.</p>
+                <div class="repo-meta"><span class="repo-lang"><span class="lang-dot py"></span>Python</span></div>
+            </a>
+            <a href="https://github.com/tripleaceme/growth-school" target="_blank" class="repo-card">
+                <div class="repo-name">growth-school</div>
+                <p class="repo-desc">Data Orchestration with Airflow workshop materials for GrowthSchool.io.</p>
+                <div class="repo-meta"><span class="repo-lang"><span class="lang-dot py"></span>Python</span></div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section class="section">
+    <div class="container">
+        <div class="section-header" style="margin-bottom: 0">
+            <span class="section-badge">Why Open Source</span>
+            <h2 class="section-title">Building in Public</h2>
+        </div>
+        <blockquote class="about-quote" style="max-width: 720px; margin: 2rem auto 0;">
+            "The analytics engineering community gave me everything &mdash; my skills, my career, my network. Open source is how I give back. Every package I build solves a problem I've hit in production, and I release it so the next team doesn't have to solve it again."
+        </blockquote>
+        <div class="cta-row" style="margin-top: 2.5rem">
+            <a href="https://github.com/tripleaceme" target="_blank" class="btn btn-primary">Follow Me on GitHub</a>
+            <a href="index-v2.html#contact" class="btn btn-outline">Collaborate on a Project</a>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col"><a href="index-v2.html" class="nav-logo footer-logo">Ayoade<span>.</span></a><p class="footer-tagline">Turning AI ambition into operational reality.</p></div>
+            <div class="footer-col"><div class="footer-col-title">Pages</div><div class="footer-nav"><a href="index-v2.html">Home</a><a href="speaking.html">Speaking</a><a href="mentorship.html">Mentorship</a><a href="opensource.html">Open Source</a></div></div>
+            <div class="footer-col"><div class="footer-col-title">More</div><div class="footer-nav"><a href="https://behindthedata.substack.com" target="_blank">Newsletter</a><a href="https://academy.behindthedata.tech" target="_blank">Academy</a><a href="https://sessionize.com/ayoade" target="_blank">Sessionize</a></div></div>
+            <div class="footer-col"><div class="footer-col-title">Connect</div><div class="footer-nav"><a href="https://www.linkedin.com/in/tripleaceme" target="_blank">LinkedIn</a><a href="https://github.com/tripleaceme" target="_blank">GitHub</a><a href="https://twitter.com/abel_analytics" target="_blank">Twitter / X</a></div></div>
+        </div>
+        <div class="footer-bottom">&copy; 2025 Ayoade Adegbite. All rights reserved.</div>
+    </div>
+</footer>
+
+<script src="script-v2.js"></script>
+</body>
+</html>

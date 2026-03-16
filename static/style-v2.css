@@ -703,4 +703,176 @@ strong { color: var(--text-primary); font-weight: 600; }
     .stat-number { font-size: 1.5rem; }
     .community-grid { grid-template-columns: 1fr 1fr; }
     .hero-photo-placeholder { width: 220px; height: 260px; }
+    .oss-featured-grid { grid-template-columns: 1fr; }
+}
+
+
+/* ================================================================
+   MULTI-PAGE: PAGE HERO (subpages)
+   ================================================================ */
+.page-hero {
+    position: relative; padding: 8rem 0 3rem; text-align: center;
+    min-height: 50vh; display: flex; align-items: center;
+}
+.page-hero .container { position: relative; z-index: 1; }
+.page-hero-title {
+    font-size: clamp(2rem, 4vw, 3rem); font-weight: 900;
+    letter-spacing: -0.03em; margin: 1rem 0; line-height: 1.1;
+}
+.page-hero-subtitle {
+    font-size: 1.08rem; color: var(--text-secondary);
+    max-width: 600px; margin: 0 auto 2rem; line-height: 1.75;
+}
+
+/* Active nav link */
+.nav-links a.active { color: var(--accent); }
+.nav-links a.active::after { width: 100%; }
+
+
+/* ================================================================
+   MULTI-PAGE: PREVIEW GRIDS (home page previews)
+   ================================================================ */
+.preview-grid-3 {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
+}
+.preview-cta { text-align: center; margin-top: 2.5rem; }
+
+/* Mentorship preview cards */
+.mentorship-preview-card {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 2rem; transition: all var(--transition);
+}
+.mentorship-preview-card:hover { border-color: var(--border-hover); transform: translateY(-3px); }
+.mentorship-preview-icon { font-size: 2rem; margin-bottom: 1rem; }
+.mentorship-preview-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem; }
+.mentorship-preview-role { font-size: 0.82rem; color: var(--accent); font-weight: 600; margin-bottom: 0.8rem; }
+.mentorship-preview-card p { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.65; }
+
+/* Highlight metric in timeline */
+.highlight-metric {
+    display: inline-block; margin-top: 0.8rem; padding: 6px 16px;
+    background: var(--accent-glow); border: 1px solid var(--border);
+    border-radius: 6px; font-family: 'JetBrains Mono', monospace;
+    font-size: 0.82rem; color: var(--accent); font-weight: 600;
+}
+
+
+/* ================================================================
+   MULTI-PAGE: OSS FEATURED CARDS (opensource page)
+   ================================================================ */
+.oss-featured-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;
+}
+.oss-featured-card {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 2rem;
+    transition: all var(--transition);
+}
+.oss-featured-card:hover { border-color: var(--border-hover); }
+
+.oss-featured-header {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    margin-bottom: 1rem;
+}
+.oss-featured-desc {
+    font-size: 0.92rem; color: var(--text-secondary); line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+.oss-featured-highlights { margin-bottom: 1.5rem; }
+.oss-highlight { margin-bottom: 0.8rem; }
+.oss-highlight-label {
+    font-size: 0.68rem; color: var(--text-muted); text-transform: uppercase;
+    letter-spacing: 0.08em; font-weight: 700; margin-bottom: 2px;
+}
+.oss-highlight-value { font-size: 0.88rem; color: var(--text-primary); font-weight: 500; }
+.oss-featured-footer {
+    display: flex; justify-content: space-between; align-items: center;
+    padding-top: 1rem; border-top: 1px solid var(--border);
+}
+
+
+/* ================================================================
+   MULTI-PAGE: WRITING CARDS (home page publications)
+   ================================================================ */
+.writing-card {
+    display: block; background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 1.8rem; transition: all var(--transition);
+}
+.writing-card:hover { border-color: var(--border-hover); transform: translateY(-3px); }
+.writing-type {
+    display: inline-block; font-size: 0.65rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--accent-secondary); background: rgba(124,77,255,0.1);
+    padding: 3px 10px; border-radius: 4px; margin-bottom: 0.8rem;
+}
+.writing-title { font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; line-height: 1.35; }
+.writing-excerpt { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; }
+
+
+/* ================================================================
+   MULTI-PAGE: TESTIMONIALS
+   ================================================================ */
+.testimonials-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
+}
+.testimonial-card {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 2rem; transition: all var(--transition);
+}
+.testimonial-card:hover { border-color: var(--border-hover); }
+.testimonial-quote {
+    font-size: 0.92rem; color: var(--text-secondary); line-height: 1.7;
+    font-style: italic; margin-bottom: 1.5rem;
+}
+.testimonial-author { display: flex; gap: 0.8rem; align-items: center; }
+.testimonial-avatar {
+    width: 40px; height: 40px; min-width: 40px; border-radius: 50%;
+    background: var(--accent-glow); border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.75rem; font-weight: 800; color: var(--accent);
+    font-family: 'JetBrains Mono', monospace;
+}
+.testimonial-name { font-size: 0.88rem; font-weight: 700; }
+.testimonial-role { font-size: 0.78rem; color: var(--text-muted); }
+.testimonials-note {
+    text-align: center; margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted);
+}
+.testimonials-note a { color: var(--accent); text-decoration: underline; }
+
+
+/* ================================================================
+   MULTI-PAGE: GITHUB ACHIEVEMENTS (opensource page)
+   ================================================================ */
+.github-achievements {
+    display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;
+    padding: 1.5rem 0;
+}
+.achievement-badge {
+    display: flex; align-items: center; gap: 0.5rem;
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 50px; padding: 8px 18px;
+    transition: all var(--transition);
+}
+.achievement-badge:hover { border-color: var(--border-hover); }
+.achievement-icon { font-size: 1.2rem; }
+.achievement-name { font-size: 0.78rem; font-weight: 600; color: var(--text-secondary); }
+
+
+/* ================================================================
+   MULTI-PAGE RESPONSIVE ADDITIONS
+   ================================================================ */
+@media (max-width: 1024px) {
+    .preview-grid-3 { grid-template-columns: repeat(2, 1fr); }
+    .oss-featured-grid { grid-template-columns: 1fr; }
+    .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .page-hero { padding: 7rem 0 2rem; min-height: auto; }
+    .page-hero-title { font-size: 1.8rem; }
+    .preview-grid-3 { grid-template-columns: 1fr; }
+    .testimonials-grid { grid-template-columns: 1fr; }
+    .github-achievements { gap: 0.8rem; }
+    .achievement-badge { padding: 6px 12px; }
+    .achievement-name { font-size: 0.7rem; }
 }
